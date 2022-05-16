@@ -22,16 +22,16 @@ public class ReadCSV : MonoBehaviour
                 break;
             }
             var dataValues = dataString.Split(",");
-/*            for(int i = 0; i < dataValues.Length; i++)
+            for (int i = 0; i < dataValues.Length; i++)
             {
                 Debug.Log("Values: " + i.ToString() + " " + dataValues[i].ToString());
-            }*/
+            }
 
-            Debug.Log(  dataValues[0].ToString() + " " + 
-                        dataValues[1].ToString() + " " + 
-                        dataValues[2].ToString() + " " + 
-                        dataValues[3].ToString()
-                      );
+            /*            Debug.Log(  dataValues[0].ToString() + " " + 
+                                    dataValues[1].ToString() + " " + 
+                                    dataValues[2].ToString() + " " + 
+                                    dataValues[3].ToString()
+                                  );*/
         }
     }
 }

@@ -30,6 +30,7 @@ public class CSVReader : MonoBehaviour
 
     void ReadCSV()
     {
+        Debug.Log("TextAsset: " + textAssestData);
         string[] data = textAssestData.text.Split(new string[] { ",", "\n" }, StringSplitOptions.None);
         Debug.Log("AHA: " + data[4]);
 
@@ -41,8 +42,8 @@ public class CSVReader : MonoBehaviour
             myPlayerlist.player[i] = new Player();
             myPlayerlist.player[i].name = data[4 * (i + 1)];
             myPlayerlist.player[i].health = int.Parse(data[4 * (i + 1) + 1]);
-            myPlayerlist.player[i].damage = int.Parse(data[4 * (i + 1) + 1]);
-            myPlayerlist.player[i].defence = int.Parse(data[4 * (i + 1) + 1]);
+            myPlayerlist.player[i].damage = int.Parse(data[4 * (i + 1) + 1 + 1]);
+            myPlayerlist.player[i].defence = int.Parse(data[4 * (i + 1) + 1 + 1 + 1]);
         }
     }
 }
